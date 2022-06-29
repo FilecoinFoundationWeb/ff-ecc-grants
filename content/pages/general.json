@@ -1,13 +1,13 @@
 {
   "seo": {
-    "title": "Filecoin Foundation",
-    "description": "Filecoin Foundation - Let's build the internet of everyone"
+    "title": "Filecoin ECC Grants",
+    "description": "Filecoin ECC Grants"
   },
   "og": {
-    "site_name": "Filecoin Foundation",
-    "url": "https://fil.org",
+    "site_name": "Filecoin ECC Grants",
+    "url": "https://ff-ecc-grants.org",
     "type": "website",
-    "image": "/images/open-graph.png"
+    "image": ""
   },
   "social": [
     {

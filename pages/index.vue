@@ -93,11 +93,15 @@ $backgroundLayers__Left__Mini: 0.25rem * 5;
 
 $backgroundFill__Left: calc(50% - (#{$containerWidth} / 2) + (4 * 1.75rem));
 $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
+$indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem));
 
 // ///////////////////////////////////////////////////////////////////// General
 .page-ecc-grants {
   // padding-bottom: calc(#{$backgroundLayers__Top} + 10rem);
   color: $white;
+  // @include mini {
+  //   background-color: $polar;
+  // }
 }
 
 .main-content {
@@ -134,14 +138,21 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.1));
     z-index: -1;
   }
-  @include small {
+  @include medium {
     &:before {
-      left: 1.25rem;
+      left: 2.5rem;
+    }
+    &:after {
+      left: $indentedFill__Left__Medium;
     }
   }
   @include mini {
     &:before {
       border-radius: 0;
+      left: 1.25rem;
+    }
+    &:after {
+      left: 1.25rem;
     }
   }
 }
@@ -159,6 +170,11 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     background-color: $blackPearl;
     filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.1));
     z-index: -10;
+  }
+  @include medium {
+    &:before {
+      left: $indentedFill__Left__Medium;
+    }
   }
   @include mini {
     &:before {
@@ -182,6 +198,22 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   &:before {
     height: calc(100% + 5.375rem) !important;
   }
+  @include medium {
+    &:before {
+      height: calc(100% + 4.5rem) !important;
+    }
+  }
+  @include small {
+    &:before {
+      border-radius: 0 0 0 6.75rem;
+    }
+  }
+  @include mini {
+    &:before {
+      height: calc(100% + 4rem) !important;
+      border-radius: 0 0 0 4.75rem;
+    }
+  }
 }
 
 // /////////////////////////////////////////////////////////// Background Layers
@@ -200,6 +232,7 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   @include mini {
     left: -12rem;
     width: calc(100% + 24rem);
+    height: calc(100% + 32rem);
   }
 }
 
@@ -223,10 +256,14 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   display: none;
   @include mini {
     display: block;
-    padding: 0 0 2.625rem 0;
-    .image {
+    padding: 0;
+    .image-block {
       width: 100vw;
       border-radius: 50vw 0 0 50vw;
+      overflow: hidden;
+    }
+    .image {
+      width: 100%;
     }
   }
 }
@@ -234,6 +271,9 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
 ::v-deep #logos {
   padding-top: 10rem;
   padding-bottom: 1.5rem;
+  @include mini {
+    padding: 1rem 0;
+  }
 }
 
 ::v-deep #hero {
@@ -241,21 +281,24 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   margin-bottom: 0.5rem;
   @include mini {
     margin-bottom: 0;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
   }
   .column-content {
     &.left {
       display: flex;
-      margin-right: 0.125rem 1.25rem;
+      margin-right: 1.25rem;
       .heading {
         margin-bottom: 2rem;
         @include fontSize_Huge;
         @include fontWeight_Medium;
         letter-spacing: 0.0625rem;
         line-height: leading(66, 55);
-        @include small {
+        @include medium {
           @include fontSize_ExtraExtraLarge;
         }
-        @include tiny {
+        @include mini {
+          @include fontSize_ExtraExtraLarge;
           margin: 0;
         }
       }
@@ -266,6 +309,11 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
         letter-spacing: kerning(0.45);
         line-height: leading(35, 15);
         transition: 250ms ease;
+
+        @include medium {
+          margin-bottom: 1.5rem;
+        }
+
         .text {
           margin-right: 0.5rem;
           transition: inherit;
@@ -305,6 +353,10 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
         min-height: 20rem;
         border-radius: 20vw 3rem 3rem 20vw;
         overflow: hidden;
+        @include medium {
+          width: 100vw;
+          border-radius: 20rem 3rem 3rem 20rem;
+        }
       }
       .image {
         width: 105%;
@@ -318,8 +370,11 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
           width: 50vw;
         }
         @include medium {
-          width: 50vw;
+          width: 30rem;
           // border-radius: 25vw 0 0 25vw;
+        }
+        @include small {
+          width: 30rem;
         }
       }
     }
@@ -337,6 +392,9 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     @include fontWeight_Regular;
     letter-spacing: 0.0375rem;
     line-height: leading(30, 20);
+    @include mini {
+      @include fontSize_Medium;
+    }
   }
 
   .description {
@@ -361,17 +419,24 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     width: 64vw;
     max-width: 80.875rem;
     max-height: 21.875rem;
-    border-radius: 22vw 3rem 3rem 22vw;
+    border-radius: 25vw 3rem 3rem 25vw;
     overflow: hidden;
     transform: translateX(3.5rem);
+    @include medium {
+      width: 100vw;
+      max-height: 50vw;
+      transform: translateX(-4rem);
+    }
+    @include mini {
+      transform: translateX(0);
+    }
   }
   .image {
     width: 100%;
     max-width: 80.875rem;
     transform: translateY(-13%);
     @include mini {
-      width: 90vw;
-      border-radius: 50vw 0 0 50vw;
+      transform: translateY(-10%);
     }
   }
 }
@@ -380,11 +445,31 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   padding-top: 7.875rem;
   padding-bottom: 0;
   margin-bottom: 0;
+
+  @include mini {
+    padding-top: 3rem;
+  }
+
   .image-block {
     transform: translate(-1.5rem, -2.25rem);
+    @include small {
+      transform: translate(-1.5rem, 0);
+    }
+    @include mini {
+      margin-top: 2rem;
+      transform: translate(0, 0);
+    }
   }
   .image {
     width: 12.125rem;
+    @include small {
+      width: 9rem;
+      margin: 0 auto;
+    }
+    @include mini {
+      margin: 0 auto;
+      width: 8rem;
+    }
   }
   .heading {
     margin-bottom: 0;
@@ -392,9 +477,25 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     @include fontWeight_Medium;
     letter-spacing: 0.0625rem;
     line-height: leading(66, 55);
+    @include medium {
+      margin-bottom: 3rem;
+    }
+    @include mini {
+      margin-bottom: 0;
+      @include fontSize_ExtraExtraLarge;
+      text-align: right;
+    }
   }
   .button-row {
     margin: 0;
+  }
+  .right {
+    .image-block {
+      display: none;
+      @include mini {
+        display: block;
+      }
+    }
   }
 }
 
@@ -404,6 +505,7 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   @include mini {
     padding-top: 1.5rem;
     margin-bottom: 0;
+    padding-bottom: 3rem;
   }
 }
 
@@ -416,21 +518,31 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
     max-height: 21.875rem;
     border-radius: 22vw 3rem 3rem 22vw;
     overflow: hidden;
+    @include medium {
+      width: 100vw;
+      transform: translateX(-4rem);
+    }
+    @include mini {
+      width: 100vw;
+      max-height: 50vw;
+      transform: translateX(0);
+    }
   }
   .image {
     width: 100%;
     max-width: 80.875rem;
     transform: translateY(-13%);
-    @include mini {
-      width: 140vw;
-      border-radius: 70vw 0 0 70vw;
-    }
   }
 }
 
 ::v-deep #section-3-text-block {
   padding-top: 6.5625rem;
   padding-bottom: 3.625rem;
+
+  @include mini {
+    padding-top: 4.5rem;
+  }
+
   .description {
     @include fontSize_Regular;
     @include fontWeight_Regular;
@@ -444,6 +556,9 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
 
 ::v-deep #section-3-accordion {
   padding-top: 0;
+  @include mini {
+    padding-bottom: 3rem;
+  }
 }
 
 // ----------------------------------------------------------------- [Section] 4
@@ -452,6 +567,14 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
   padding-bottom: 2.75rem;
   .image-block {
     padding: 0 2.5rem;
+    @include medium {
+      padding-left: 0;
+    }
+    @include mini {
+      padding: 0;
+      // padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
   }
   .text-block {
     .heading {
@@ -463,6 +586,9 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
       a {
         @include linkInText;
       }
+      @include mini {
+        @include fontSize_Large;
+      }
     }
     .description {
       @include fontSize_Large;
@@ -471,6 +597,9 @@ $indentedFill__Left: calc(50% - (#{$containerWidth} / 2) + (14 * 1.75rem));
       line-height: leading(30, 20);
       a {
         @include linkInText;
+      }
+      @include mini {
+        @include fontSize_Medium;
       }
     }
   }

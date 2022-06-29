@@ -91,7 +91,6 @@ export default {
       return false
     },
     heading () {
-      console.log(this.block.heading)
       return this.block.heading
     },
     headingLevel () {

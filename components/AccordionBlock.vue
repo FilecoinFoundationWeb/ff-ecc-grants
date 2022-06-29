@@ -112,11 +112,18 @@ export default {
 
 .label {
   padding-right: 3rem;
+  @include mini {
+    padding-right: 1rem;
+  }
 }
 
-.icon {
-  width: 1rem;
+::v-deep .icon {
+  min-width: 0.875rem;
+  width: 0.875rem;
   transition: 250ms ease-in-out;
+  svg {
+    width: 0.875rem;
+  }
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
