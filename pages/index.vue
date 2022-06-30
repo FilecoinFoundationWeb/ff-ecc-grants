@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$backgroundLayers__Offset: 1.75rem * 5;
+$backgroundLayers__Offset: 1.75rem * 7;
 $backgroundLayers__Top: calc(#{$navigationHeight + $backgroundLayers__Offset});
 
 $backgroundLayers__Left__Desktop: calc(50% - (#{$containerWidth} / 2) + 1.75rem);
@@ -97,24 +97,19 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 
 // ///////////////////////////////////////////////////////////////////// General
 .page-ecc-grants {
-  // padding-bottom: calc(#{$backgroundLayers__Top} + 10rem);
   color: $white;
-  // @include mini {
-  //   background-color: $polar;
-  // }
 }
 
 .main-content {
   position: relative;
-  top: -2.5 * $backgroundLayers__Offset;
-}
-
-#section_0 {
-  margin-bottom: $backgroundLayers__Offset - $navigationHeight;
+  padding-bottom: $backgroundLayers__Offset;
+  @include mini {
+    padding-bottom: calc(#{$backgroundLayers__Offset} - 7rem);
+  }
 }
 
 #section_1 {
-  padding-top: 7rem; // 1.75rem * 4
+  padding-top: 0; // 1.75rem * 4
   &:before {
     content: '';
     position: absolute;
@@ -196,11 +191,11 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 
 #section_4 {
   &:before {
-    height: calc(100% + 5.375rem) !important;
+    height: calc(100% + 5.5rem) !important;
   }
   @include medium {
     &:before {
-      height: calc(100% + 4.5rem) !important;
+      height: calc(100% + 4.625rem) !important;
     }
   }
   @include small {
@@ -210,7 +205,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   @include mini {
     &:before {
-      height: calc(100% + 4rem) !important;
+      height: calc(100% - 2.875rem) !important;
       border-radius: 0 0 0 4.75rem;
     }
   }
@@ -219,29 +214,33 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 // /////////////////////////////////////////////////////////// Background Layers
 ::v-deep #page-ecc-grants-body-layer {
   position: absolute;
-  top: 0;
+  top: -0.625rem;
   left: 0;
-  width: calc(100% + 16rem);
-  height: calc(100% + #{$backgroundLayers__Top / 2} + 1.75rem * 2);
+  width: 100%;
+  height: calc(100% - 2rem);
   z-index: -11;
+  .layer {
+    border-radius: 0 0 0 11.5rem !important;
+  }
   @include small {
     .layer {
       border-radius: 0 !important;
     }
   }
   @include mini {
+    height: calc(100% + 2rem);
     left: -12rem;
     width: calc(100% + 24rem);
-    height: calc(100% + 32rem);
+    // height: calc(100% + 32rem);
   }
 }
 
 #page-ecc-grants-background-layers {
   position: absolute;
-  top: 0;
+  top: calc(-1 * #{$backgroundLayers__Offset});
   left: $backgroundLayers__Left__Desktop;
   width: calc(100% + 20rem);
-  height: calc(100% + #{$backgroundLayers__Top / 2} - 1.75rem * 2);
+  height: calc(100% + #{$backgroundLayers__Top / 2} - 2rem);
   @include medium {
     left: $backgroundLayers__Left__Medium;
   }
@@ -257,28 +256,42 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   @include mini {
     display: block;
     padding: 0;
-    .image-block {
-      width: 100vw;
-      border-radius: 50vw 0 0 50vw;
-      overflow: hidden;
+  }
+  .image-block {
+    width: 100vw;
+    height: 20rem;
+    transform: translateX(3rem);
+    border-radius: 20rem 3rem 3rem 20rem;
+    overflow: hidden;
+    @include mini {
+      transform: translateX(3rem);
     }
-    .image {
-      width: 100%;
+    @include tiny {
+      transform: translateX(0rem);
+    }
+  }
+  .image {
+    width: 110%;
+    transform: translateY(-1rem);
+    @include small {
+      width: 522px;
+    }
+    @include mini {
+      // width: 22rem;
     }
   }
 }
 
 ::v-deep #logos {
-  padding-top: 10rem;
-  padding-bottom: 1.5rem;
+  padding: 5.375rem 0;
   @include mini {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 
 ::v-deep #hero {
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   @include mini {
     margin-bottom: 0;
     margin-top: 1rem;
@@ -288,8 +301,14 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
     &.left {
       display: flex;
       margin-right: 1.25rem;
+      .label {
+        margin-bottom: 1rem;
+        letter-spacing: 0.025rem;
+        line-height: leading(35, 13);
+        @include fontWeight_SemiBold;
+      }
       .heading {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         @include fontSize_Huge;
         @include fontWeight_Medium;
         letter-spacing: 0.0625rem;
@@ -300,6 +319,16 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         @include mini {
           @include fontSize_ExtraExtraLarge;
           margin: 0;
+        }
+      }
+      .subheading {
+        margin-bottom: 2rem;
+        @include fontSize_Large;
+        @include fontWeight_Regular;
+        letter-spacing: 0.0375rem;
+        line-height: leading(30, 20);
+        @include mini {
+          @include fontSize_Medium;
         }
       }
       .button {
@@ -317,6 +346,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         .text {
           margin-right: 0.5rem;
           transition: inherit;
+          white-space: nowrap;
         }
         .chevron {
           margin-right: 0;
@@ -348,8 +378,8 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
       .image-block {
         transform: translateY(-3.5rem);
         max-height: 20rem;
-        width: 38vw;
-        max-width: 53.5rem;
+        width: 40rem;
+        // max-width: 38rem;
         min-height: 20rem;
         border-radius: 20vw 3rem 3rem 20vw;
         overflow: hidden;
@@ -359,22 +389,15 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         }
       }
       .image {
-        width: 105%;
-        max-width: 53.5rem;
-        transform: translateY(-3rem);
+        width: 110%;
+        width: 46rem;
+        transform: translate(-3rem, -4rem);
         @include xlarge {
-          transform: translateY(0);
-          width: 110%;
-        }
-        @include large {
-          width: 50vw;
+          width: 42rem;
         }
         @include medium {
-          width: 30rem;
-          // border-radius: 25vw 0 0 25vw;
-        }
-        @include small {
-          width: 30rem;
+          width: 36rem;
+          transform: 0;
         }
       }
     }
@@ -417,7 +440,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   padding: 0;
   .image-block {
     width: 64vw;
-    max-width: 80.875rem;
+    max-width: 56rem;
     max-height: 21.875rem;
     border-radius: 25vw 3rem 3rem 25vw;
     overflow: hidden;
@@ -433,7 +456,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   .image {
     width: 100%;
-    max-width: 80.875rem;
+    max-width: 56rem;
     transform: translateY(-13%);
     @include mini {
       transform: translateY(-10%);
@@ -467,7 +490,8 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
       margin: 0 auto;
     }
     @include mini {
-      margin: 0 auto;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
       width: 8rem;
     }
   }
@@ -514,7 +538,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   padding: 0;
   .image-block {
     width: 74vw;
-    max-width: 80.875rem;
+    max-width: 56rem;
     max-height: 21.875rem;
     border-radius: 22vw 3rem 3rem 22vw;
     overflow: hidden;
@@ -530,7 +554,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   .image {
     width: 100%;
-    max-width: 80.875rem;
+    max-width: 56rem;
     transform: translateY(-13%);
   }
 }
@@ -565,6 +589,9 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 ::v-deep #section-footer {
   padding-top: 1rem;
   padding-bottom: 2.75rem;
+  @include mini {
+    padding-bottom: 7rem;
+  }
   .image-block {
     padding: 0 2.5rem;
     @include medium {
