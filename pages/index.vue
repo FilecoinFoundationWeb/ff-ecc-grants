@@ -256,20 +256,34 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   @include mini {
     display: block;
     padding: 0;
-    .image-block {
-      width: 100vw;
-      border-radius: 50vw 0 0 50vw;
-      overflow: hidden;
+  }
+  .image-block {
+    width: 100vw;
+    height: 20rem;
+    transform: translateX(3rem);
+    border-radius: 20rem 3rem 3rem 20rem;
+    overflow: hidden;
+    @include mini {
+      transform: translateX(3rem);
     }
-    .image {
-      width: 100%;
+    @include tiny {
+      transform: translateX(0rem);
+    }
+  }
+  .image {
+    width: 110%;
+    transform: translateY(-1rem);
+    @include small {
+      width: 522px;
+    }
+    @include mini {
+      // width: 22rem;
     }
   }
 }
 
 ::v-deep #logos {
-  padding-top: 10rem;
-  padding-bottom: 1.5rem;
+  padding: 5.375rem 0;
   @include mini {
     padding: 1.5rem 0;
   }
@@ -277,7 +291,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 
 ::v-deep #hero {
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   @include mini {
     margin-bottom: 0;
     margin-top: 1rem;
@@ -287,8 +301,14 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
     &.left {
       display: flex;
       margin-right: 1.25rem;
+      .label {
+        margin-bottom: 1rem;
+        letter-spacing: 0.025rem;
+        line-height: leading(35, 13);
+        @include fontWeight_SemiBold;
+      }
       .heading {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         @include fontSize_Huge;
         @include fontWeight_Medium;
         letter-spacing: 0.0625rem;
@@ -299,6 +319,16 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         @include mini {
           @include fontSize_ExtraExtraLarge;
           margin: 0;
+        }
+      }
+      .subheading {
+        margin-bottom: 2rem;
+        @include fontSize_Large;
+        @include fontWeight_Regular;
+        letter-spacing: 0.0375rem;
+        line-height: leading(30, 20);
+        @include mini {
+          @include fontSize_Medium;
         }
       }
       .button {
@@ -316,6 +346,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         .text {
           margin-right: 0.5rem;
           transition: inherit;
+          white-space: nowrap;
         }
         .chevron {
           margin-right: 0;
@@ -347,8 +378,8 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
       .image-block {
         transform: translateY(-3.5rem);
         max-height: 20rem;
-        width: 38vw;
-        max-width: 53.5rem;
+        width: 40rem;
+        // max-width: 38rem;
         min-height: 20rem;
         border-radius: 20vw 3rem 3rem 20vw;
         overflow: hidden;
@@ -358,22 +389,15 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         }
       }
       .image {
-        width: 105%;
-        max-width: 53.5rem;
-        transform: translateY(-3rem);
+        width: 110%;
+        width: 46rem;
+        transform: translate(-3rem, -4rem);
         @include xlarge {
-          transform: translateY(0);
-          width: 110%;
-        }
-        @include large {
-          width: 50vw;
+          width: 42rem;
         }
         @include medium {
-          width: 30rem;
-          // border-radius: 25vw 0 0 25vw;
-        }
-        @include small {
-          width: 30rem;
+          width: 36rem;
+          transform: 0;
         }
       }
     }
@@ -416,7 +440,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   padding: 0;
   .image-block {
     width: 64vw;
-    max-width: 80.875rem;
+    max-width: 56rem;
     max-height: 21.875rem;
     border-radius: 25vw 3rem 3rem 25vw;
     overflow: hidden;
@@ -432,7 +456,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   .image {
     width: 100%;
-    max-width: 80.875rem;
+    max-width: 56rem;
     transform: translateY(-13%);
     @include mini {
       transform: translateY(-10%);
@@ -514,7 +538,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   padding: 0;
   .image-block {
     width: 74vw;
-    max-width: 80.875rem;
+    max-width: 56rem;
     max-height: 21.875rem;
     border-radius: 22vw 3rem 3rem 22vw;
     overflow: hidden;
@@ -530,7 +554,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   .image {
     width: 100%;
-    max-width: 80.875rem;
+    max-width: 56rem;
     transform: translateY(-13%);
   }
 }
