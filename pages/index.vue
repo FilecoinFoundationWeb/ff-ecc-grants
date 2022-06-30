@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$backgroundLayers__Offset: 1.75rem * 5;
+$backgroundLayers__Offset: 1.75rem * 7;
 $backgroundLayers__Top: calc(#{$navigationHeight + $backgroundLayers__Offset});
 
 $backgroundLayers__Left__Desktop: calc(50% - (#{$containerWidth} / 2) + 1.75rem);
@@ -97,24 +97,19 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 
 // ///////////////////////////////////////////////////////////////////// General
 .page-ecc-grants {
-  // padding-bottom: calc(#{$backgroundLayers__Top} + 10rem);
   color: $white;
-  // @include mini {
-  //   background-color: $polar;
-  // }
 }
 
 .main-content {
   position: relative;
-  top: -2.5 * $backgroundLayers__Offset;
-}
-
-#section_0 {
-  margin-bottom: $backgroundLayers__Offset - $navigationHeight;
+  padding-bottom: $backgroundLayers__Offset;
+  @include mini {
+    padding-bottom: calc(#{$backgroundLayers__Offset} - 7rem);
+  }
 }
 
 #section_1 {
-  padding-top: 7rem; // 1.75rem * 4
+  padding-top: 0; // 1.75rem * 4
   &:before {
     content: '';
     position: absolute;
@@ -196,11 +191,11 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 
 #section_4 {
   &:before {
-    height: calc(100% + 5.375rem) !important;
+    height: calc(100% + 5.5rem) !important;
   }
   @include medium {
     &:before {
-      height: calc(100% + 4.5rem) !important;
+      height: calc(100% + 4.625rem) !important;
     }
   }
   @include small {
@@ -210,7 +205,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   }
   @include mini {
     &:before {
-      height: calc(100% + 4rem) !important;
+      height: calc(100% - 2.875rem) !important;
       border-radius: 0 0 0 4.75rem;
     }
   }
@@ -219,29 +214,33 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 // /////////////////////////////////////////////////////////// Background Layers
 ::v-deep #page-ecc-grants-body-layer {
   position: absolute;
-  top: 0;
+  top: -0.625rem;
   left: 0;
-  width: calc(100% + 16rem);
-  height: calc(100% + #{$backgroundLayers__Top / 2} + 1.75rem * 2);
+  width: 100%;
+  height: calc(100% - 2rem);
   z-index: -11;
+  .layer {
+    border-radius: 0 0 0 11.5rem !important;
+  }
   @include small {
     .layer {
       border-radius: 0 !important;
     }
   }
   @include mini {
+    height: calc(100% + 2rem);
     left: -12rem;
     width: calc(100% + 24rem);
-    height: calc(100% + 32rem);
+    // height: calc(100% + 32rem);
   }
 }
 
 #page-ecc-grants-background-layers {
   position: absolute;
-  top: 0;
+  top: calc(-1 * #{$backgroundLayers__Offset});
   left: $backgroundLayers__Left__Desktop;
   width: calc(100% + 20rem);
-  height: calc(100% + #{$backgroundLayers__Top / 2} - 1.75rem * 2);
+  height: calc(100% + #{$backgroundLayers__Top / 2} - 2rem);
   @include medium {
     left: $backgroundLayers__Left__Medium;
   }
@@ -272,7 +271,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
   padding-top: 10rem;
   padding-bottom: 1.5rem;
   @include mini {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 
@@ -467,7 +466,8 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
       margin: 0 auto;
     }
     @include mini {
-      margin: 0 auto;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
       width: 8rem;
     }
   }
@@ -565,6 +565,9 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
 ::v-deep #section-footer {
   padding-top: 1rem;
   padding-bottom: 2.75rem;
+  @include mini {
+    padding-bottom: 7rem;
+  }
   .image-block {
     padding: 0 2.5rem;
     @include medium {

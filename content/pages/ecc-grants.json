@@ -1,18 +1,5 @@
 {
   "page_content": {
-    "section_0": {
-      "out-of-page": {
-        "left": {
-          "type": "text_block",
-          "layout": "large",
-          "cols": {
-            "num": "col-4",
-            "push_left": "off-3"
-          },
-          "description": "."
-        }
-      }
-    },
     "section_1": {
       "logos": {
         "left": {
