@@ -2,7 +2,7 @@
 
 #### Filecoin Foundation + Electric Coin Co. Grants Website
 
-<p align="left"><img src="static/images/open-graph.png" width="550" alt="ff ecc grants image" /></p>
+<p align="left"><img src="static/images/open-graph.png" width="90%" alt="ff ecc grants image" /></p>
 
 ## Overview
 
