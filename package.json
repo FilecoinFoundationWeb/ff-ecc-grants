@@ -1,7 +1,7 @@
 {
-  "name": "filecoin-foundation-site",
+  "name": "ff-ecc-grants",
   "version": "1.0.0",
-  "description": "Primary website for the Filecoin Foundation",
+  "description": "Website for a joint effort between the Filecoin Foundation and the Electonic Coin Co.",
   "author": {
     "name": "Agency Undone",
     "email": "hello@agencyundone.com"
@@ -14,7 +14,7 @@
     "generate": "node_modules/.bin/nuxt generate --fail-on-error"
   },
   "engines": {
-    "node": ">=14.17.6"
+    "node": ">=16.13.0"
   },
   "dependencies": {
     "@agency-undone/nuxt-module-ipfs": "^1.0.2-alpha.4",

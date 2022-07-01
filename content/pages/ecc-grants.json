@@ -26,7 +26,7 @@
             "push_left": "off-3_mi-1",
             "push_right": ""
           },
-          "src": "/images/people-meeting-at-event.png",
+          "src": "/images/people-meeting-at-event.jpg",
           "label": ""
         }
       },
@@ -64,7 +64,7 @@
             "push_left": "off-1",
             "push_right": ""
           },
-          "src": "/images/people-meeting-at-event.png",
+          "src": "/images/people-meeting-at-event.jpg",
           "label": ""
         }
       },
@@ -102,7 +102,7 @@
             "push_left": "off-4_mi-1",
             "push_right": ""
           },
-          "src": "/images/people-around-table-with-laptops.png",
+          "src": "/images/people-around-table-with-laptops.jpg",
           "label": ""
         }
       },
@@ -161,7 +161,7 @@
           "sections": [
             {
               "label": "What kinds of projects are you looking for?",
-              "content": "Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. A few opportunities that have been discussed to date:<br><br><span class='accordion-content-heading'>Filecoin storage payments in Zec.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Media and file support in Zcash encrypted memos and NFTs.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Zero-knowledge virtual machine.</span><br><br>The Filecoin Virtual Machine project will be released in milestones across 2022, and ECC is interested in a general programming capability as well. Projects exploring zero-knowledge technology to improve privacy and security of virtual machine execution are of particular interest."
+              "content": "Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. A few opportunities that have been discussed to date:<br><br><span class='accordion-content-heading'>Filecoin storage payments in ZEC.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Media and file support in Zcash encrypted memos and NFTs.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Zero-knowledge virtual machine.</span><br><br>The Filecoin Virtual Machine project will be released in milestones across 2022, and ECC is interested in a general programming capability as well. Projects exploring zero-knowledge technology to improve privacy and security of virtual machine execution are of particular interest."
             }
           ]
         }
@@ -179,7 +179,7 @@
             "push_left": "off-4_mi-1",
             "push_right": ""
           },
-          "src": "/images/people-talking-on-sofa.png",
+          "src": "/images/people-talking-on-sofa.jpg",
           "label": ""
         }
       },
@@ -215,7 +215,7 @@
             },
             {
               "label": "How can I submit a proposal?",
-              "content": "To submit a proposal, create an issue in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
+              "content": "To submit a proposal, <a href='https://github.com/filecoin-project/devgrants/issues/new?assignees=realChainLife&labels=RFP&template=rfp-application.md&title=RFP+Application' target='_blank' alt='Create RFP issue'>create an issue</a> in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
             }
           ]
         }
@@ -241,20 +241,20 @@
             "num": "col-5_sm-6_mi-9",
             "push_left": "off-0_mi-2"
           },
-          "heading": "More questions? <a href='https://fil.org/'>Drop us a line.</a>",
-          "description": "About <a href='https://filecoin.io/'>Filecoin</a><br>About <a href='https://fil.org/'>Filecoin Foundation</a><br>About <a href='https://electriccoin.co/'>Electric Coin Company</a><br>About <a href='https://z.cash/'>ZCash</a>"
+          "heading": "More questions? <a href='mailto:ff-ecc-grants@fil.org'>Drop us a line.</a>",
+          "description": "About <a target='_blank' alt='Filecoin website' href='https://filecoin.io/'>Filecoin</a><br>About <a target='_blank' alt='Filecoin Foundation' href='https://fil.org/'>Filecoin Foundation</a><br>About <a target='_blank' alt='Electric Coin Co' href='https://electriccoin.co/'>Electric Coin Company</a><br>About <a target='_blank' alt='Zcash' href='https://z.cash/'>ZCash</a>"
         }
       }
     }
   },
   "seo": {
     "title": "Filecoin ECC Grants",
-    "description": "Filecoin ECC Grants"
+    "description": "Filecoin Foundation and Electric Coin Co. (ECC) are working together to empower the Filecoin, Zcash, and greater Web3 ecosystems through a joint grants pool."
   },
   "og": {
     "site_name": "Filecoin ECC Grants",
     "url": "https://ff-ecc-grants.org",
     "type": "website",
-    "image": ""
+    "image": "/images/open-graph.png"
   }
 }
