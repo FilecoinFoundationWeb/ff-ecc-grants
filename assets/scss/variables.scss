@@ -36,6 +36,7 @@ $denim: #154ED9;
 $kleinBlue: #0621A4;
 $deepCove: #06094E;
 $blackPearl: #08072E;
+$saffron: #f5b728; // Zcash yellow
 
 // ----------------------------------------------------------------- Breakpoints
 $breakpoint_Tiny: 25.9375rem; // 415px
@@ -274,10 +275,11 @@ $letterSpacing_Large: 0.03em;
   color: $azureRadiance;
   transition: 250ms ease;
   &:hover {
-    @include fontWeight_Medium;
+    color: $jordyBlue;
+    @include fontWeight_Bold;
   }
   &:active {
-    @include fontWeight_Medium;
+    @include fontWeight_Bold;
     color: white;
   }
 }

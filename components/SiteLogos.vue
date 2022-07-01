@@ -24,7 +24,7 @@
 
     <span>{{ divider }}</span>
 
-    <svg width="155" height="49" viewBox="0 0 155 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="155" height="55" viewBox="0 0 155 45" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M62.5898 9.1543H72.379V11.389H64.946V14.2532H70.1246V16.4879H64.946V19.676H72.379V21.9107H62.5898V9.1543Z" fill="white"/>
       <path d="M84.5039 21.9095H74.7764V9.1543H77.1314V19.6754H84.5045V21.9095H84.5039Z" fill="white"/>
       <path d="M87.04 9.1543H96.8293V11.389H89.3962V14.2532H94.5748V16.4879H89.3962V19.676H96.8293V21.9107H87.04V9.1543Z" fill="white"/>

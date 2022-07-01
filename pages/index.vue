@@ -332,12 +332,12 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
         }
       }
       .button {
-        padding: 0 1.125rem;
+        padding: 0.5rem 1.125rem 0.625rem;
         font-size: 0.9375rem;
         @include fontWeight_Medium;
         letter-spacing: kerning(0.45);
-        line-height: leading(35, 15);
-        transition: 250ms ease;
+        line-height: leading(22.5, 15);
+        transition: all 350ms ease;
 
         @include medium {
           margin-bottom: 1.5rem;
@@ -349,7 +349,7 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
           white-space: nowrap;
         }
         .chevron {
-          margin-right: 0;
+          margin: 0 0 -0.0625rem 0.25rem;
           transform: rotate(-90deg);
           transition: inherit;
           svg {
@@ -361,7 +361,10 @@ $indentedFill__Left__Medium: calc(50% - (#{$containerWidth} / 2) + (10 * 1.75rem
           }
         }
         &:hover {
-          border-color: $azureRadiance;
+          transform: scale(1.05);
+          .chevron {
+            margin-left: 0.625rem;
+          }
         }
         &:active {
           border-color: $azureRadiance;
