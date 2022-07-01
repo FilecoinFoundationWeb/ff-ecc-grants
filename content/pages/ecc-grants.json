@@ -1,0 +1,260 @@
+{
+  "page_content": {
+    "section_1": {
+      "logos": {
+        "left": {
+          "type": "text_block",
+          "cols": {
+            "num": "col-6_mi-10",
+            "push_left": "off-3_md-1"
+          },
+          "customizations": {
+            "logo_component": {
+              "name": "SiteLogos",
+              "props": {
+                "divider": "+"
+              }
+            }
+          }
+        }
+      },
+      "mobile_image_banner": {
+        "left": {
+          "type": "image_block",
+          "cols": {
+            "num": "col-4_mi-11",
+            "push_left": "off-3_mi-1",
+            "push_right": ""
+          },
+          "src": "/images/people-meeting-at-event.jpg",
+          "label": ""
+        }
+      },
+      "hero": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "text_block",
+          "layout": "large",
+          "cols": {
+            "num": "col-5_mi-10",
+            "push_left": "off-3_md-1"
+          },
+          "heading": "Open Call for Proposals",
+          "label": "Funding Utility",
+          "subheading": "Help us increase utility for Filecoin and Zcash chains",
+          "description": "",
+          "ctas": [
+            {
+              "type": "B",
+              "action": "a",
+              "icon_after": "chevron",
+              "text": "Submit your proposal today",
+              "target": "_blank",
+              "url": "https://github.com/filecoin-project/devgrants/blob/master/rfps/zcash-and-filecoin.md#how-to-apply",
+              "theme": ""
+            }
+          ]
+        },
+        "right": {
+          "type": "image_block",
+          "cols": {
+            "num": "col-3_mi-hidden",
+            "push_left": "off-1",
+            "push_right": ""
+          },
+          "src": "/images/people-meeting-at-event.jpg",
+          "label": ""
+        }
+      },
+      "hero_text": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "text_block",
+          "layout": "large",
+          "cols": {
+            "num": "col-6_sm-7_mi-11",
+            "push_left": "off-6_md-4_mi-1",
+            "push_right": ""
+          },
+          "subheading": "Filecoin Foundation and Electric Coin Co. (ECC) are working together to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new agreement that creates a joint grants pool for Filecoin and Zcash projects.",
+          "label": "",
+          "heading": "",
+          "description": "Filecoin Foundation and Electric Coin Co. (ECC) are working together to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new agreement that creates a joint grants pool for Filecoin and Zcash projects.<br><br>We’re seeking proposals for projects that lead to additional utility for both FIL and ZEC chains and their respective ecosystems.<br><br>All work funded through this RFP must be open-sourced via MIT and Apache2 licenses.<br><br><a href='https://filecoinfoundation.medium.com/new-agreement-between-filecoin-foundation-and-electric-coin-co-63df066212b1' target='_blank'>Learn more</a> about the collaboration between Filecoin Foundation and ECC.",
+          "ctas": [
+
+          ]
+        }
+      }
+    },
+    "section_2": {
+      "section-2-banner-image": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "image_block",
+          "cols": {
+            "num": "col-8_mi-10",
+            "push_left": "off-4_mi-1",
+            "push_right": ""
+          },
+          "src": "/images/people-around-table-with-laptops.jpg",
+          "label": ""
+        }
+      },
+      "section-2-heading": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "image_block",
+          "layout": "small",
+          "cols": {
+            "num": "col-3_mi-hidden",
+            "push_left": "off-4_md-2"
+          },
+          "src": "/images/question-mark.png",
+          "label": ""
+        },
+        "right": {
+          "type": "text_block",
+          "layout": "compact",
+          "cols": {
+            "num": "col-5_mi-10",
+            "push_left": "off-0_mi-1"
+          },
+          "heading": "Frequently Asked Questions",
+          "subheading": "",
+          "label": "",
+          "description": "",
+          "ctas": [
+
+          ],
+          "customizations": {
+            "section-2-mobile-image": {
+              "name": "ImageBlock",
+              "props": {
+                "block": {
+                  "src": "/images/question-mark.png"
+                }
+              }
+            }
+          }
+        }
+      },
+      "section-2-accordion": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "accordion_block",
+          "layout": "large",
+          "cols": {
+            "num": "col-6_mi-10",
+            "push_left": "off-6_md-4_mi-1",
+            "push_right": ""
+          },
+          "sections": [
+            {
+              "label": "What kinds of projects are you looking for?",
+              "content": "Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. A few opportunities that have been discussed to date:<br><br><span class='accordion-content-heading'>Filecoin storage payments in ZEC.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Media and file support in Zcash encrypted memos and NFTs.</span><br><br>It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.<br><br><span class='accordion-content-heading'>Zero-knowledge virtual machine.</span><br><br>The Filecoin Virtual Machine project will be released in milestones across 2022, and ECC is interested in a general programming capability as well. Projects exploring zero-knowledge technology to improve privacy and security of virtual machine execution are of particular interest."
+            }
+          ]
+        }
+      }
+    },
+    "section_3": {
+      "section-3-banner-image": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "image_block",
+          "cols": {
+            "num": "col-8_mi-11",
+            "push_left": "off-4_mi-1",
+            "push_right": ""
+          },
+          "src": "/images/people-talking-on-sofa.jpg",
+          "label": ""
+        }
+      },
+      "section-3-text-block": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "text_block",
+          "layout": "compact",
+          "cols": {
+            "num": "col-6_mi-10",
+            "push_left": "off-6_md-4_mi-1"
+          },
+          "description": "Teams are welcome to build proposals based on these ideas or on other collaborations that will add utility to both the FIL and ZEC chains.<br><br>We will prioritize teams and individuals with in-depth knowledge on blockchain infrastructure and high technical skill that want to contribute to growing the utility and incentives of the Filecoin and Zcash ecosystems."
+        }
+      },
+      "section-3-accordion": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "accordion_block",
+          "cols": {
+            "num": "col-6_mi-10",
+            "push_left": "off-6_md-4_mi-1"
+          },
+          "multiple": true,
+          "sections": [
+            {
+              "label": "What is the funding pool for this grant program?",
+              "content": "The grant program includes over 300,000 FIL, provided by Filecoin Foundation, and may ultimately include additional funds provided by ECC and Filecoin Foundation. Funds will be jointly administered by Filecoin Foundation and ECC."
+            },
+            {
+              "label": "How can I submit a proposal?",
+              "content": "To submit a proposal, <a href='https://github.com/filecoin-project/devgrants/issues/new?assignees=realChainLife&labels=RFP&template=rfp-application.md&title=RFP+Application' target='_blank' alt='Create RFP issue'>create an issue</a> in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
+            }
+          ]
+        }
+      }
+    },
+    "section_4": {
+      "section-footer": {
+        "grid": [
+          "noGutter"
+        ],
+        "left": {
+          "type": "image_block",
+          "cols": {
+            "num": "col-4_mi-7_ti-9",
+            "push_left": "off-3_md-2_sm-1_mi-2"
+          },
+          "src": "/images/speech-bubble.png"
+        },
+        "right": {
+          "type": "text_block",
+          "layout": "compact",
+          "cols": {
+            "num": "col-5_sm-6_mi-9",
+            "push_left": "off-0_mi-2"
+          },
+          "heading": "More questions? <a href='mailto:ff-ecc-grants@fil.org'>Drop us a line.</a>",
+          "description": "About <a target='_blank' alt='Filecoin website' href='https://filecoin.io/'>Filecoin</a><br>About <a target='_blank' alt='Filecoin Foundation' href='https://fil.org/'>Filecoin Foundation</a><br>About <a target='_blank' alt='Electric Coin Co' href='https://electriccoin.co/'>Electric Coin Company</a><br>About <a target='_blank' alt='Zcash' href='https://z.cash/'>ZCash</a>"
+        }
+      }
+    }
+  },
+  "seo": {
+    "title": "Filecoin ECC Grants",
+    "description": "Filecoin Foundation and Electric Coin Co. (ECC) are working together to empower the Filecoin, Zcash, and greater Web3 ecosystems through a joint grants pool."
+  },
+  "og": {
+    "site_name": "Filecoin ECC Grants",
+    "url": "https://ff-ecc-grants.org",
+    "type": "website",
+    "image": "/images/open-graph.png"
+  }
+}
