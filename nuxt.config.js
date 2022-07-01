@@ -9,7 +9,7 @@ export default {
     nodeEnv: process.env.NODE_ENV,
     serverEnv: process.env.SERVER_ENV,
     seo: {
-      siteName: 'Filecoin Foundation',
+      siteName: 'FF ECC Grants',
       siteUrl: 'https://ff-ecc-grants.org'
     }
   },

@@ -249,12 +249,12 @@
   },
   "seo": {
     "title": "Filecoin ECC Grants",
-    "description": "Filecoin ECC Grants"
+    "description": "Filecoin Foundation and Electric Coin Co. (ECC) are working together to empower the Filecoin, Zcash, and greater Web3 ecosystems through a joint grants pool."
   },
   "og": {
     "site_name": "Filecoin ECC Grants",
     "url": "https://ff-ecc-grants.org",
     "type": "website",
-    "image": ""
+    "image": "/images/open-graph.png"
   }
 }
