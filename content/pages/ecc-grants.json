@@ -215,7 +215,7 @@
             },
             {
               "label": "How can I submit a proposal?",
-              "content": "To submit a proposal, <a href='#' target='_blank' alt=''>create an issue</a> in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
+              "content": "To submit a proposal, <a href='https://github.com/filecoin-project/devgrants/issues/new?assignees=realChainLife&labels=RFP&template=rfp-application.md&title=RFP+Application' target='_blank' alt='Create RFP issue'>create an issue</a> in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
             }
           ]
         }
@@ -241,8 +241,8 @@
             "num": "col-5_sm-6_mi-9",
             "push_left": "off-0_mi-2"
           },
-          "heading": "More questions? <a href='https://fil.org/'>Drop us a line.</a>",
-          "description": "About <a href='https://filecoin.io/'>Filecoin</a><br>About <a href='https://fil.org/'>Filecoin Foundation</a><br>About <a href='https://electriccoin.co/'>Electric Coin Company</a><br>About <a href='https://z.cash/'>ZCash</a>"
+          "heading": "More questions? <a href='mailto:ff-ecc-grants@fil.org'>Drop us a line.</a>",
+          "description": "About <a target='_blank' alt='Filecoin website' href='https://filecoin.io/'>Filecoin</a><br>About <a target='_blank' alt='Filecoin Foundation' href='https://fil.org/'>Filecoin Foundation</a><br>About <a target='_blank' alt='Electric Coin Co' href='https://electriccoin.co/'>Electric Coin Company</a><br>About <a target='_blank' alt='Zcash' href='https://z.cash/'>ZCash</a>"
         }
       }
     }
