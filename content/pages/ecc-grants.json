@@ -215,7 +215,7 @@
             },
             {
               "label": "How can I submit a proposal?",
-              "content": "To submit a proposal, create an issue in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
+              "content": "To submit a proposal, <a href='#' target='_blank' alt=''>create an issue</a> in this repository using the RFP issue template. Draft proposals for discussion are welcome and encouraged.<br><br>Proposals will be evaluated on a rolling basis through December 31, 2023. Submissions will receive a final determination within 1 month."
             }
           ]
         }
