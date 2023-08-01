@@ -50,7 +50,7 @@
               "type": "B",
               "action": "a",
               "icon_after": "chevron",
-              "text": "Submit your proposal today",
+              "text": "Review former submission process",
               "target": "_blank",
               "url": "https://github.com/filecoin-project/devgrants/blob/master/rfps/zcash-and-filecoin.md#how-to-apply",
               "theme": ""
