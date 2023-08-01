@@ -41,16 +41,16 @@
             "num": "col-5_mi-10",
             "push_left": "off-3_md-1"
           },
-          "heading": "Open Call for Proposals",
+          "heading": "RFP Now Closed",
           "label": "Funding Utility",
-          "subheading": "Help us increase utility for Filecoin and Zcash chains",
+          "subheading": "We are no longer accepting proposals. The content on this page has been preserved for reference only.",
           "description": "",
           "ctas": [
             {
               "type": "B",
               "action": "a",
               "icon_after": "chevron",
-              "text": "Submit your proposal today",
+              "text": "Review former submission process",
               "target": "_blank",
               "url": "https://github.com/filecoin-project/devgrants/blob/master/rfps/zcash-and-filecoin.md#how-to-apply",
               "theme": ""
