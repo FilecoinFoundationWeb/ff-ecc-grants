@@ -35,6 +35,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'ff-ecc-grants.org' }
     ]
   },
   // ////////////////////////////////////////// Customize the progress-bar color
