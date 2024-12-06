@@ -37,20 +37,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
     ],
     script: [
-      { src: 'https://plausible.io/js/script.file-downloads.hash.outbound-links.js', defer: true, 'data-domain': 'ff-ecc-grants.org' },
-      {
-        id: 'plausible-inline',
-        innerHTML: `
-          window.plausible = window.plausible || function() { 
-            (window.plausible.q = window.plausible.q || []).push(arguments) 
-          }
-        `,
-        type: 'text/javascript'
-      }
-    ],
-    __dangerouslyDisableSanitizersByTagID: {
-      'plausible-inline': ['innerHTML'] 
-    }
+      { src: 'https://plausible.io/js/script.file-downloads.hash.outbound-links.js', defer: true, 'data-domain': 'ff-ecc-grants.org' }
+    ]
   },
   // ////////////////////////////////////////// Customize the progress-bar color
   // ---------------------------------------------------------------------------
